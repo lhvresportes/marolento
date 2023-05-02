@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  	table {
+			border-collapse: collapse;
+			width: 100%;
+			font-family: Arial, sans-serif;
+			margin-bottom: 20px;
+		}
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border: 1px solid #ddd;
+		}
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+		tr:hover {
+			background-color: #ddd;
+		}
+
+		/* Estilos responsivos */
+		@media screen and (max-width: 767px) {
+			table {
+				font-size: 12px;
+			}
+			th, td {
+				padding: 6px;
+			}
+			th {
+				font-size: 14px;
+			}
+			td:before {
+				content: attr(data-label);
+				float: left;
+				font-weight: bold;
+			}
+			tr:nth-child(even) {
+				background-color: transparent;
+			}
+		}
+</style>
+<body>
+	<BR><BR><BR><BR><BR></BR></BR>
+  <h1>Tabela de Artilheiros</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Posição</th>
+				<th>Jogador</th>
+				<th>Time</th>
+				<th>Gols</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td data-label="Posição">1</td>
+				<td data-label="Jogador">Caick</td>
+				<td data-label="Time">Informática 1</td>
+				<td data-label="Gols">06</td>
+			</tr>
+			<tr>
+				<td data-label="Posição">2</td>
+				<td data-label="Jogador">Samuel</td>
+				<td data-label="Time">Finanças 3</td>
+				<td data-label="Gols">05</td>
+			</tr>
+			<tr>
+				<td data-label="Posição">3</td>
+				<td data-label="Jogador">Rafael</td>
+				<td data-label="Time">Finanças 3</td>
+				<td data-label="Gols">04</td>
+			</tr>
+			<tr>
+				<td data-label="Posição">4</td>
+				<td data-label="Jogador">João Vitor</td>
+				<td data-label="Time">Segurança 2</td>
+				<td data-label="Gols">04</td>
+			</tr>
+			<tr>
+				<td data-label="Posição">5</td>
+				<td data-label="Jogador">Andrei</td>
+				<td data-label="Time">Enfermagem</td>
+				<td data-label="Gols">04</td>
+			</tr>
+      <tr>
+				<td data-label="Posição">6</td>
+				<td data-label="Jogador">Webson</td>
+				<td data-label="Time">Segurança 3</td>
+				<td data-label="Gols">04</td>
+			</tr>
+      <tr>
+				<td data-label="Posição">7</td>
+				<td data-label="Jogador">Dailon </td>
+				<td data-label="Time">Finanças 3</td>
+				<td data-label="Gols">03</td>
+			</tr>
+      <tr>
+				<td data-label="Posição">8</td>
+				<td data-label="Jogador">Kime  </td>
+				<td data-label="Time">Segurança 2</td>
+				<td data-label="Gols">03</td>
+			</tr>
+      <tr>
+				<td data-label="Posição">9</td>
+				<td data-label="Jogador">Wilker</td>
+				<td data-label="Time">Finanças 2</td>
+				<td data-label="Gols">03</td>
+			</tr>
+      <tr> 
+				<td data-label="Posição">10</td>
+				<td data-label="Jogador">Denilson</td>
+				<td data-label="Time">Finanças 3</td>
+				<td data-label="Gols">02</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
